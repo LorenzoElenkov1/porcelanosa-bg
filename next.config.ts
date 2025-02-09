@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export", // Enables static export
   basePath: "/porcelanosa-bg", // Change this to match your repository name
+  assetPrefix: "/porcelanosa-bg",
   images: {
     unoptimized: true, // Required for static hosting
     remotePatterns: [
@@ -12,6 +13,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  trailingSlash: true,
 };
 
 export default nextConfig;
