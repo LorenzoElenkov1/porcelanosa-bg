@@ -11,7 +11,7 @@ const Header = () => {
       <div className="flex py-2">
         <Button
           link
-          href="/porcelanosa-bg"
+          href="/"
           text={
             <>
               <h4
@@ -39,7 +39,7 @@ const Header = () => {
             secondary
             text="Връзка с нас"
             link
-            href="/porcelanosa-bg/contact-us"
+            href="/contact-us"
           />
           <ExpandableButton
             text="Език"
@@ -60,7 +60,7 @@ const Header = () => {
           secondary
           text="Продукти"
           link
-          href="/porcelanosa-bg/products"
+          href="/products"
         />
         <ExpandableButton
           text={
@@ -76,12 +76,12 @@ const Header = () => {
           }
           block={<FactoriesBlock />}
         />
-        <Button secondary text="Проекти" link href="/porcelanosa-bg/projects" />
+        <Button secondary text="Проекти" link href="/projects" />
         <Button
           secondary
           text="Lifestyle"
           link
-          href="/porcelanosa-bg/lifestyle"
+          href="/lifestyle"
         />
       </div>
     </div>
