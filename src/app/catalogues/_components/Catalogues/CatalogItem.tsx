@@ -9,7 +9,7 @@ const CatalogItem = ({ name, image }: CatalogueItem) => {
         <Image src={image} alt="" fill className="object-contain" />
       </div>
       <span>{name}</span>
-      <a href={""}>Виж в PDF</a>
+      <a href={"/porcelanosa-bg"}>Виж в PDF</a>
     </div>
   );
 };

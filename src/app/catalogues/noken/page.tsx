@@ -7,7 +7,7 @@ const Page = () => {
     <>
       <AboveTheFold
         text="NOKEN"
-        image={{ url: "/Porcelanosa_Grupo.jpg", alt: "Noken" }}
+        image={{ url: "/porcelanosa-bg/Porcelanosa_Grupo.jpg", alt: "Noken" }}
       />
       <Catalogues
         catalogues={[

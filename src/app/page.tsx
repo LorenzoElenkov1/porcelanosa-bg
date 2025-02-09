@@ -6,7 +6,7 @@ export default function Home() {
     <div className="w-full min-h-[calc(100svh-200px)] relative">
       <Image
         fill
-        src="/Porcelanosa_Grupo.jpg"
+        src="/porcelanosa-bg/Porcelanosa_Grupo.jpg"
         alt="Porcelanosa"
         className="object-cover"
       />

@@ -11,7 +11,7 @@ const Header = () => {
       <div className="flex py-2">
         <Button
           link
-          href="/"
+          href="/porcelanosa-bg"
           text={
             <>
               <h4
@@ -23,7 +23,11 @@ const Header = () => {
               <div className="flex gap-2 self-end pb-2">
                 <span className="text-[0.75rem]">представено от</span>
                 <div className="w-[44px] h-[22px] relative">
-                  <Image src="/download.png" fill alt="ele-ceramica" />
+                  <Image
+                    src="/porcelanosa-bg/download.png"
+                    fill
+                    alt="ele-ceramica"
+                  />
                 </div>
               </div>
             </>
@@ -31,7 +35,12 @@ const Header = () => {
           style="flex flex-col items-center justify-center w-max mx-auto py-0 px-0"
         />
         <div className="flex gap-2 justify-center items-center text-[13px] absolute right-0 top-0 py-7 px-2">
-          <Button secondary text="Връзка с нас" link href="/contact-us" />
+          <Button
+            secondary
+            text="Връзка с нас"
+            link
+            href="/porcelanosa-bg/contact-us"
+          />
           <ExpandableButton
             text="Език"
             rightAligned
@@ -47,7 +56,12 @@ const Header = () => {
       </div>
 
       <div className="flex justify-center gap-10 text-sm border-y-[1px]">
-        <Button secondary text="Продукти" link href="/products" />
+        <Button
+          secondary
+          text="Продукти"
+          link
+          href="/porcelanosa-bg/products"
+        />
         <ExpandableButton
           text={
             <>
@@ -62,8 +76,13 @@ const Header = () => {
           }
           block={<FactoriesBlock />}
         />
-        <Button secondary text="Проекти" link href="/projects" />
-        <Button secondary text="Lifestyle" link href="/lifestyle" />
+        <Button secondary text="Проекти" link href="/porcelanosa-bg/projects" />
+        <Button
+          secondary
+          text="Lifestyle"
+          link
+          href="/porcelanosa-bg/lifestyle"
+        />
       </div>
     </div>
   );
