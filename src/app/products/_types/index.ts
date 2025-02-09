@@ -9,8 +9,7 @@ type ProductItemBase = {
   factory: string;
   img: string;
   collection: string;
-  sizes: string[];
   color: string;
 };
 
-export type ProductItem = ProductItemBase;;
+export type ProductItem = ProductItemBase;
