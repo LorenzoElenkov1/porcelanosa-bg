@@ -2,7 +2,7 @@ import React from "react";
 import { CatalogueItem } from "./CataloguesContainer";
 import Image from "next/image";
 
-const CatalogItem = ({ name, image, downloadLink }: CatalogueItem) => {
+const CatalogItem = ({ name, image }: CatalogueItem) => {
   return (
     <div className="grid grid-rows-[max-content_max-content_max-content] gap-1">
       <div className="h-[60vh] aspect-[2/3] relative">
