@@ -7,7 +7,7 @@ const Page = () => {
     <>
       <AboveTheFold
         text="ПРОДУКТИ"
-        image={{ url: "/porcelanosa-bg/Porcelanosa_Grupo.jpg", alt: "продукти" }}
+        image={{ url: "/Porcelanosa_Grupo.jpg", alt: "продукти" }}
       />
       <ProductsContainer />
     </>

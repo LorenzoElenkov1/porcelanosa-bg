@@ -24,7 +24,7 @@ const Header = () => {
                 <span className="text-[0.75rem]">представено от</span>
                 <div className="w-[44px] h-[22px] relative">
                   <Image
-                    src="/porcelanosa-bg/download.png"
+                    src="/download.png"
                     fill
                     alt="ele-ceramica"
                   />
