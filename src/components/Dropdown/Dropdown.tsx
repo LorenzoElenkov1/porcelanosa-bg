@@ -30,7 +30,7 @@ const Dropdown = (props: Props) => {
       <span className="text-xl">{props.label}</span>
       <button
         onClick={() => setOpen(!isOpen)}
-        className="p-2 px-4 border-2 flex gap-2 items-center w-[160px] justify-between"
+        className="p-2 px-4 border-2 flex gap-2 items-center w-[160px] justify-between bg-slate-50"
       >
         {props.value.label}
         <Image
@@ -41,14 +41,14 @@ const Dropdown = (props: Props) => {
         />
       </button>
       {isOpen && (
-        <div className="flex flex-col absolute top-20 w-[160px] left-0 bg-slate-300 z-10">
+        <div className="flex flex-col absolute top-20 w-[160px] left-0 bg-slate-50 z-10 border-2 border-t-0">
           {props.options.map((option) => (
             <button
               key={option.value}
               onClick={() => handleOptionClick(option)}
               className={`${
-                isActive(option) ? "bg-slate-300" : ""
-              } pl-[17px] py-2 text-start hover:bg-slate-400`}
+                isActive(option) ? "bg-slate-200 hover:bg-slate-200" : "hover:bg-slate-100"
+              } pl-[17px] py-2 text-start`}
             >
               {option.label}
             </button>

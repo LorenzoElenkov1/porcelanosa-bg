@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full min-h-[calc(100svh-200px)] relative">
+    <div className="w-full min-h-[calc(100svh-145px)] relative">
       <Image
         fill
         src="Porcelanosa_Grupo.jpg"

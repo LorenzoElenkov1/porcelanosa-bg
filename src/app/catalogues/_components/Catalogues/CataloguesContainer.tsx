@@ -11,7 +11,7 @@ type Props = { catalogues: CatalogueItem[] };
 
 const CataloguesContainer = ({ catalogues }: Props) => {
   return (
-    <div className="w-full grid grid-cols-[0.4fr_1fr] px-10">
+    <div className="w-full grid grid-cols-[0.4fr_1fr] px-10 mb-10">
       <div className="flex flex-col gap-1">
         <h4 className="text-[36px] max-content">Каталози</h4>
         <div className="h-[2px] ml-[2.5px] w-[140px] bg-[linear-gradient(to_right,black,transparent)]" />

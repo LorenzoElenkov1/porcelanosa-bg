@@ -7,7 +7,7 @@ import Button from "../Buttons/Button";
 
 const Header = () => {
   return (
-    <div className="w-full [&>*]:border-black bg-slate-50 bg-opacity-70">
+    <div className="w-full [&>*]:border-[rgba(0,0,0,0.2)] bg-slate-50 bg-opacity-70">
       <div className="flex py-2">
         <Button
           link

@@ -37,7 +37,7 @@ const ProductsContainer = () => {
   }, [filters]);
 
   return (
-    <div className="grid grid-cols-[max-content_1fr] gap-40 px-10 min-h-[40vh]">
+    <div className="grid grid-cols-[max-content_1fr] gap-40 px-10 min-h-[40vh] mb-10">
       <ProductsWithFilters
         onFilterChange={handleFilterChange}
         filters={filters}
