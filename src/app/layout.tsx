@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="">
       <body
-        className={`${lato.className} antialiased mx-auto min-h-lvh flex flex-col outline-1 outline bg-slate-100`}
+        className={`${lato.className} antialiased mx-auto min-h-lvh flex flex-col outline-1 outline bg-slate-200`}
       >
         <Header />
         {children}
