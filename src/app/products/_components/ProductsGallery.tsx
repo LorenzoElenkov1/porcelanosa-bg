@@ -16,7 +16,7 @@ const ProductsGallery = ({ items }: Props) => {
             <Image src={item.img} alt="" fill className="object-cover" />
           </div>
           <span className="mt-2">{item.collection}</span>
-          <span className="text-gray-400">{item.color.toUpperCase()}</span>
+          <span className="text-gray-500">{item.color.toUpperCase()}</span>
         </div>
       )): <span>Няма намерени продукти</span>}
     </div>
