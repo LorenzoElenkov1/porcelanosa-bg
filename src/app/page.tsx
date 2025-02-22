@@ -11,7 +11,7 @@ export default function Home() {
         className="object-cover"
       />
       <div className="absolute top-[55%] translate-y-[-50%] left-[50%] translate-x-[-50%] flex flex-col items-center gap-4">
-        <h1 style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }} className="flex flex-col items-center leading-none text-white text-[60px]">
+        <h1 style={{ textShadow: '0 0 8px rgba(0, 0, 0, 0.5)' }} className="flex flex-col items-center leading-none text-white text-[60px]">
           НОВА КОЛЕКЦИЯ <span>2025</span>
         </h1>
         <div className="text-xl">
