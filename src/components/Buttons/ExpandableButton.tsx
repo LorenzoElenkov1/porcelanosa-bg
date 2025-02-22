@@ -7,6 +7,7 @@ type ExpandableButtonProps = {
   block: ReactElement;
   rightAligned?: boolean;
   rightOffset?: number;
+  style?: string;
 };
 
 export default function ExpandableButton({
@@ -14,6 +15,7 @@ export default function ExpandableButton({
   block,
   rightAligned = false,
   rightOffset = 0,
+  style
 }: ExpandableButtonProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [position, setPosition] = useState<{ top: number; left: number }>({
@@ -66,7 +68,7 @@ export default function ExpandableButton({
       <button
         ref={buttonRef}
         onClick={handleClick}
-        className="px-4 py-2 flex-nowrap flex gap-2 items-center"
+        className={`px-4 py-2 flex-nowrap flex gap-2 items-center ${style}`}
       >
         {text}
       </button>

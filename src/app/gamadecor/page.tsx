@@ -1,13 +1,13 @@
 import React from "react";
-import AboveTheFold from "../_components/AboveTheFold/AboveTheFold";
-import Catalogues from "../_components/Catalogues/CataloguesContainer";
+import AboveTheFold from "../../components/AboveTheFold/AboveTheFold";
+import Catalogues from "../../components/Catalogues/CataloguesContainer";
 
 const Page = () => {
   return (
     <>
       <AboveTheFold
-        text="L'ANTIC COLONIAL"
-        image={{ url: "/Porcelanosa_Grupo.jpg", alt: "L'antic Colonial" }}
+        text="GAMADECOR"
+        image={{ url: "/Porcelanosa_Grupo.jpg", alt: "Gamadecor" }}
       />
       <Catalogues
         catalogues={[

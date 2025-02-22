@@ -1,22 +1,17 @@
-import Button from "@/components/Buttons/Button";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full min-h-[calc(100svh-145px)] relative">
+    <div className="w-full min-h-[100svh] relative">
       <Image
         fill
         src="Porcelanosa_Grupo.jpg"
         alt="Porcelanosa"
         className="object-cover"
       />
-      <div className="absolute top-[55%] translate-y-[-50%] left-[50%] translate-x-[-50%] flex flex-col items-center gap-4">
-        <h1 style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }} className="flex flex-col items-center leading-none text-white text-[60px]">
-          НОВА КОЛЕКЦИЯ <span>2025</span>
-        </h1>
-        <div className="text-xl">
-          <Button primary text="Виж тук" style="px-8 rounded-xl" />
-        </div>
+      <div className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] flex flex-col items-start text-4xl text-white bg-[rgba(0,0,0,0.5)] px-8 py-4">
+        <span>Тук може да пише различни неща</span>
+        <span className="text-lg">на всяка снимка, която се върти тук</span>
       </div>
     </div>
   );

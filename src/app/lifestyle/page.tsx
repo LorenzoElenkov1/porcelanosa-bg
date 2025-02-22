@@ -1,6 +1,6 @@
 import React from "react";
-import AboveTheFold from "../catalogues/_components/AboveTheFold/AboveTheFold";
-import Catalogues from "../catalogues/_components/Catalogues/CataloguesContainer";
+import AboveTheFold from "../../components/AboveTheFold/AboveTheFold";
+import Catalogues from "../../components/Catalogues/CataloguesContainer";
 
 const Page = () => {
   return (
