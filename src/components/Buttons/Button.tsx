@@ -8,6 +8,7 @@ type LinkButtonBase = TypeButton & {
   style?: string;
   showActive?: boolean;
   hoverable?: boolean;
+  isContactUs?: boolean;
 };
 
 type PrimaryButton = {
@@ -48,6 +49,7 @@ const Button = ({
   href,
   showActive = true,
   hoverable = true,
+  isContactUs = false,
 }: Props) => {
   const location = usePathname();
 
@@ -62,7 +64,7 @@ const Button = ({
         showActive ? "border-l-[0.2rem]" : ""
       } ${isActive ? "border-l-[rgb(255,99,71)]" : "border-l-gray-500"} ${
         hoverable ? hoverStyles : ""
-      } ${style}`}
+      } ${isContactUs ? 'border-[1px] border-[lightgray] border-l-[rgb(211,211,211)] py-2' : ''} ${style}`}
     >
       {text}
     </Link>

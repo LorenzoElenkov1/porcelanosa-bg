@@ -29,7 +29,7 @@ const Header = () => {
           style="flex flex-col items-center justify-center w-max mx-auto py-0 px-0"
         />
         <div className="flex gap-2 justify-center items-center text-[13px] absolute right-0 py-[1.3rem] mr-8">
-          <Button showActive={false} hoverable={false} secondary text="Контакти" link href="/contact-us" style={'border-[1px] border-[lightgray] border-l-[lightgray] py-1'} />
+          <Button showActive={false} hoverable={false} secondary text="Контакти" link href="/contact-us" isContactUs />
           <ExpandableButton
             text="Език"
             rightAligned
