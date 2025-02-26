@@ -43,7 +43,7 @@ const Page = () => {
               </div>
               <div className="h-full w-[1px] bg-white" />
               <div className="flex flex-col gap-2">
-                <span>10:00 - 19:00</span>
+                <span>09:00 - 19:00</span>
                 <span>Почивен ден</span>
                 <span>Почивен ден</span>
               </div>
