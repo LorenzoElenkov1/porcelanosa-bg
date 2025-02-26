@@ -15,14 +15,14 @@ const Header = () => {
           text={
             <>
               <h4
-                className={`font-custom w-full text-[2rem] tracking-tight gap-3 flex justify-center items-center`}
+                className={`font-custom w-full text-[2rem] tracking-tight gap-1 flex justify-center items-center`}
               >
                 <span>PORCELANOSA</span>
                 <span className="text-[1.5rem]">Grupo</span>
               </h4>
-              <div className="self-end flex gap-2 items-center">
-                <span className="text-[0.75rem]">by</span>
-                <span className="text-2">ELE Ceramica</span>
+              <div className="self-end flex gap-2 items-center text-[0.5rem]">
+                <span>represented by</span>
+                <span>ELE Ceramica</span>
               </div>
             </>
           }
