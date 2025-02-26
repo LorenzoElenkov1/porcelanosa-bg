@@ -49,16 +49,16 @@ const Header = () => {
         <div className="flex gap-10 justify-center py-2">
           <Button secondary text="PORCELANOSA" link href="/porcelanosa" />
           <Button secondary text="NOKEN" link href="/noken" />
-          <Button secondary text="URBATEK" link href="/urbatek" />
+          <Button secondary text="XTONE" link href="/xtone" />
           <Button secondary text="L'ANTIC COLONIAL" link href="/lantic-colonial" />
           <Button secondary text="KRION" link href="/krion" />
           <Button secondary text="BUTECH" link href="/butech" />
           <Button secondary text="GAMADECOR" link href="/gamadecor" />
         </div>
         <div className="flex gap-10 justify-center py-2">
-          <Button secondary text="Info PORCELANOSA" link href="/products" />
+          <Button secondary text="Info" link href="/products" />
           <Button secondary text="Lifestyle" link href="/lifestyle" />
-          <Button secondary text="Porcelanosa Grupo Projects" link href="/projects" />
+          <Button secondary text="Projects" link href="/projects" />
         </div>
       </div>
     </div>
