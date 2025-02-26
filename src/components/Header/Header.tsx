@@ -20,9 +20,8 @@ const Header = () => {
                 <span>PORCELANOSA</span>
                 <span className="text-[1.5rem]">Grupo</span>
               </h4>
-              <div className="self-end flex gap-2 items-center text-[0.5rem]">
-                <span>represented by</span>
-                <span>ELE Ceramica</span>
+              <div className="self-end flex items-center text-[0.5rem] -mt-1">
+                <span>represented by ELE CERAMICA</span>
               </div>
             </>
           }
