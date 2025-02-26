@@ -20,10 +20,10 @@ const Header = () => {
                 <span>PORCELANOSA</span>
                 <span className="text-[1.5rem]">Grupo</span>
               </h4>
-              <div className="self-end flex items-center text-[0.5rem] -mt-2 gap-[6px]">
+              <div className="self-end flex items-center text-[0.5rem] -mt-2 gap-[6px] font-[Arial]">
                 <span>represented</span>
                 <span>by</span>
-                <span className="font-black">ELE Ceramica</span>
+                <span className="font-black italic">ELE Ceramica</span>
               </div>
             </>
           }
