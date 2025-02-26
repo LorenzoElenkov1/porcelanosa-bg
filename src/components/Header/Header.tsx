@@ -59,6 +59,7 @@ const Header = () => {
           <Button secondary text="Info" link href="/products" />
           <Button secondary text="Lifestyle" link href="/lifestyle" />
           <Button secondary text="Projects" link href="/projects" />
+          <Button secondary text="Promotions" link href="/promotions" />
         </div>
       </div>
     </div>
