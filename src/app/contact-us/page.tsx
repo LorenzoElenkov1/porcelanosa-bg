@@ -21,7 +21,7 @@ const Page = () => {
         <div className="flex justify-between px-8 py-4">
           <div className="flex flex-col gap-2">
             <span className="text-3xl">София</span>
-            <span>+359 2 860 60 60 / (02 860 60 60)</span>
+            <span>+359 2 860 60 60</span>
             <div className="flex gap-4 items-center">
               <span>
                 бул. Симеоновско шосе 120А, <br />
@@ -51,7 +51,7 @@ const Page = () => {
           </div>
           <div className="flex flex-col gap-2">
             <span className="text-3xl">Варна</span>
-            <span>+359 52 500 555 / (052 500 555)</span>
+            <span>+359 52 500 555</span>
             <div className="flex gap-4 items-center">
               <span>
                 ул. Никола Вапцаров 5 <br />
