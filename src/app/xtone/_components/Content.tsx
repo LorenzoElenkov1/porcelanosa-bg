@@ -59,7 +59,7 @@ const Content = () => {
               <span className="text-[rgb(157,129,105)]">PORCELAIN</span>
               <span className="pl-14">XTONE</span>
             </div>
-            <div className="absolute top-56 left-[-100] w-full h-1/5 z-20 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex flex-col gap-32">
+            <div className="absolute top-56 left-[-100px] w-full h-1/5 z-20 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex flex-col gap-32">
               <span>
                 Reflection of nature. Generic product capable of capturing
                 countless designs through high-performance materials.
@@ -121,7 +121,7 @@ const Content = () => {
                 className="object-cover opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-100 scale-110 transition-transform duration-300"
               />
             </div>
-            <div className="absolute top-0 left-[-100] w-full h-full z-20 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex flex-col gap-32">
+            <div className="absolute top-0 left-[-100px] w-full h-full z-20 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex flex-col gap-32">
               <Button
                 text={
                   <>
