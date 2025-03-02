@@ -60,7 +60,7 @@ const Content = () => {
               <span className="pl-14">XTONE</span>
             </div>
             <div className="absolute top-56 left-[-100px] w-full h-1/5 z-20 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex flex-col gap-32">
-              <span>
+              <span className="text-lg">
                 Reflection of nature. Generic product capable of capturing
                 countless designs through high-performance materials.
               </span>
@@ -121,7 +121,7 @@ const Content = () => {
                 className="object-cover opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-100 scale-110 transition-transform duration-300"
               />
             </div>
-            <div className="absolute top-0 left-[-100px] w-full h-full z-20 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex flex-col gap-32">
+            <div className="absolute top-0 left-[-100px] w-full h-full z-20 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex flex-col gap-28">
               <Button
                 text={
                   <>
@@ -144,9 +144,8 @@ const Content = () => {
                   query: "type=natural-stone",
                 }}
               />
-              <span>
-                Reflection of nature. Generic product capable of capturing
-                countless designs through high-performance materials.
+              <span className="text-lg">
+                Nature at its highest level. Surfaces with finished that show the beauty of nature through quality materials and high performance.
               </span>
             </div>
             <div className="flex flex-col items-end text-[3.5rem] font-ivy-thin leading-[46px] -mt-16 z-[20] -mr-12">
