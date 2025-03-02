@@ -10,6 +10,7 @@ export default {
       },
       fontFamily: {
         custom: ["Porcelanosa", "Arial"],
+        'ivy-thin': ["Ivy", "Porcelanosa", "Arial"]
       },
     },
   },

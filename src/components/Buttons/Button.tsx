@@ -30,7 +30,7 @@ type ButtonProps = LinkButtonBase & {
 
 type LinkProps = LinkButtonBase & {
   link: true;
-  href: string;
+  href: string | { pathname: string, query?: string };
 };
 
 type Props = ButtonProps | LinkProps;
@@ -54,7 +54,7 @@ const Button = ({
   const location = usePathname();
 
   const isActive = useMemo(() => {
-    return showActive && location.includes(href || "");
+    return showActive && location.includes(href && typeof href === 'string' ? href || "" : typeof href === 'object' ? href.pathname || "" : "");
   }, [location, href, showActive]);
 
   return link && href ? (

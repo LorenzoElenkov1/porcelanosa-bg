@@ -1,6 +1,8 @@
+export type Option = { value: string; label: string };
+
 export type Filters = {
-  product: { value: string; label: string };
-  factory: { value: string; label: string };
+  product: Option;
+  factory: Option;
 };
 
 type ProductItemBase = {

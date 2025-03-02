@@ -1,15 +1,13 @@
 import React from "react";
 import AboveTheFold from "../../components/AboveTheFold/AboveTheFold";
-import Catalogues from "../../components/Catalogues/CataloguesContainer";
+// import Catalogues from "../../components/Catalogues/CataloguesContainer";
+import Content from "./_components/Content";
 
 const Page = () => {
   return (
     <>
-      <AboveTheFold
-        text="URBATEK"
-        image={{ url: "/Porcelanosa_Grupo.jpg", alt: "Urbatek" }}
-      />
-      <Catalogues
+      <Content />
+      {/* <Catalogues
         catalogues={[
           {
             name: "Porcelanosa1",
@@ -47,7 +45,7 @@ const Page = () => {
             downloadLink: "",
           },
         ]}
-      />
+      /> */}
     </>
   );
 };

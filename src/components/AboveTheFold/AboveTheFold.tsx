@@ -15,7 +15,7 @@ const AboveTheFold = ({ text, image }: Props) => {
       <Image fill src={image.url} alt={image.alt} className="object-cover" />
       <h1
         style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
-        className="absolute top-[55%] translate-y-[-50%] left-[50%] translate-x-[-50%] flex flex-col items-center leading-none text-white text-[60px]"
+        className="absolute top-44 left-10 flex flex-col items-center leading-none text-white text-[60px]"
       >
         {text}
       </h1>

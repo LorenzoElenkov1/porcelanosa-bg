@@ -57,7 +57,7 @@ const Header = () => {
           <Button secondary text="GAMADECOR" link href="/gamadecor" />
         </div>
         <div className="flex gap-10 justify-center py-2">
-          <Button secondary text="Info" link href="/products" />
+          <Button secondary text="Info" link href="/lifestyle" />
           <Button secondary text="Lifestyle" link href="/lifestyle" />
           <Button secondary text="Projects" link href="/projects" />
           <Button secondary text="Promotions" link href="/promotions" />

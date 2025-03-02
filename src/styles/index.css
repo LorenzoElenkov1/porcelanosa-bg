@@ -2,3 +2,8 @@
     font-family: Porcelanosa;
     src: url('../../public/fonts/Porcelanosa.otf');
 }
+
+@font-face {
+    font-family: Ivy;
+    src: url('../../public/fonts/ivy-presto-display-thin.otf');
+}
