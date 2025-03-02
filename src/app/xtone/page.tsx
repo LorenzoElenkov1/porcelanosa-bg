@@ -1,5 +1,5 @@
 import React from "react";
-import AboveTheFold from "../../components/AboveTheFold/AboveTheFold";
+// import AboveTheFold from "../../components/AboveTheFold/AboveTheFold";
 // import Catalogues from "../../components/Catalogues/CataloguesContainer";
 import Content from "./_components/Content";
 
