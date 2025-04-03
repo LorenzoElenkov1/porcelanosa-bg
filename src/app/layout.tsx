@@ -3,6 +3,7 @@ import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import { LanguageProvider } from "@/components/LanguageProvider/LanguageProvider";
 
 const lato = Ubuntu({
   weight: "400",
@@ -24,9 +25,11 @@ export default function RootLayout({
       <body
         className={`${lato.className} antialiased mx-auto min-h-lvh flex flex-col outline-1 outline bg-slate-100`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          {children}
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

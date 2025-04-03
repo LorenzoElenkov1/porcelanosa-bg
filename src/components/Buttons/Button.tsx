@@ -9,6 +9,8 @@ type LinkButtonBase = TypeButton & {
   showActive?: boolean;
   hoverable?: boolean;
   isContactUs?: boolean;
+  onClick?: () => void;
+  newTab?: boolean;
 };
 
 type PrimaryButton = {
@@ -30,7 +32,7 @@ type ButtonProps = LinkButtonBase & {
 
 type LinkProps = LinkButtonBase & {
   link: true;
-  href: string | { pathname: string, query?: string };
+  href: string | { pathname: string; query?: string } | (() => string);
 };
 
 type Props = ButtonProps | LinkProps;
@@ -45,26 +47,46 @@ const Button = ({
   style = "",
   primary,
   secondary,
-  link = false,
+  link,
   href,
   showActive = true,
   hoverable = true,
   isContactUs = false,
+  onClick,
+  newTab = false,
 }: Props) => {
   const location = usePathname();
 
   const isActive = useMemo(() => {
-    return showActive && location.includes(href && typeof href === 'string' ? href || "" : typeof href === 'object' ? href.pathname || "" : "");
+    return (
+      showActive &&
+      location.includes(
+        href && typeof href === "string"
+          ? href || ""
+          : typeof href === "object"
+          ? href.pathname || ""
+          : typeof href === "function"
+          ? href() || ""
+          : ""
+      )
+    );
   }, [location, href, showActive]);
 
   return link && href ? (
     <Link
-      href={href}
-      className={`px-2 ${
-        showActive ? "border-l-[0.2rem]" : ""
-      } ${isActive ? "border-l-[rgb(255,99,71)]" : !isContactUs ? "border-l-gray-500" : ''} ${
-        hoverable ? hoverStyles : ""
-      } ${isContactUs ? 'border-[1px] border-[lightgray] border-l-[rgb(211,211,211)] py-2' : ''} ${style}`}
+      href={typeof href === "function" ? href() : href}
+      target={newTab ? "_blank" : "_self"}
+      className={`px-2 ${showActive ? "border-l-[0.2rem]" : ""} ${
+        isActive
+          ? "border-l-[rgb(255,99,71)]"
+          : !isContactUs
+          ? "border-l-gray-500"
+          : ""
+      } ${hoverable ? hoverStyles : ""} ${
+        isContactUs
+          ? "border-[1px] border-[lightgray] border-l-[rgb(211,211,211)] py-2"
+          : ""
+      } ${style}`}
     >
       {text}
     </Link>
@@ -75,6 +97,7 @@ const Button = ({
       } ${
         isActive ? "border-l-[rgb(255,99,71)]" : "border-l-gray-500"
       } ${style}`}
+      onClick={onClick ? onClick : () => {}}
     >
       {text}
     </button>
