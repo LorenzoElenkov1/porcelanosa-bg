@@ -71,12 +71,6 @@ const Carousel = () => {
     }
   }, [currentIndex]);
 
-  const goToSlide = (index: number) => {
-    setIsTransitioning(true);
-    setCurrentIndex(index + 1);
-    startAutoSlide();
-  };
-
   return (
     <div className="relative w-svw max-w-[2048px] mx-auto overflow-hidden aspect-[16/9]">
       <div
