@@ -2,10 +2,10 @@ import React from "react";
 import Button from "../Buttons/Button";
 
 type Props = {
-  lang: "bg" | "en";
+  lang: "bg" | "en" | null;
 };
 
-const LinkByLang = (lang: "bg" | "en", link: string) => {
+const LinkByLang = (lang: "bg" | "en" | null, link: string) => {
   if (lang === "en") return `/en${link}`;
   else return link;
 };
